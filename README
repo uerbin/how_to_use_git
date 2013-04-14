@@ -1,0 +1,21 @@
+# 如何使用git命令,这里使用how_to_use_git
+
+1. 创建一个目录,比如how_to_use_git
+mkdir how_to_use_git
+
+2. git初始化 
+cd how_to_use_git
+git init
+
+3. 创建一个文件,比如添加README
+touch README
+
+4. commit 创建的README
+git add README
+git commit -m 'my first git'
+
+5. 至此一直为本地操作, 创建一个远程repo, 并push 刚才的commit 
+git remote add origin git@github.com:username/how_to_use_git.git 
+git push -u origin master
+
+5. 现在repo在github上创建成功
